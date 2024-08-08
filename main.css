@@ -1,0 +1,55 @@
+main {
+    display: flex;
+    align-items: center;
+
+
+    width: 100%;
+    max-width: 1440px
+}
+
+#left-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+    padding: 16px;
+}
+
+#left-main {
+    width: 50%;
+    padding-right: 50px;
+}
+
+#left-main h1 {
+    font-size: 44px
+}
+
+#left-main p {
+    padding-right: 150px
+}
+
+#right-main {
+    width: 50%;
+    background: rgb(255, 189, 200)
+}
+
+#right-main div {
+    max-height: 50%
+}
+
+.verLancamento-btn {
+    margin-top: 40px;
+    border: 2px solid red;
+    width: 170px;
+    text-align: center;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 20px
+}
+
+.verLancamento-btn:hover {
+    background: rgb(199, 32, 32);
+    font-weight: bold;
+    transition: 0.3s
+}

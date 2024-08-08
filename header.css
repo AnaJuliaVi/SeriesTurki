@@ -1,0 +1,59 @@
+@import url('./background.css');
+
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 24px;
+    
+}
+
+header img {
+    width: 70px;
+    height: auto;    
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    list-style: none;
+}
+
+
+.navigation__link {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.navigation__link:hover {
+    color: rgb(77, 228, 203);
+}
+
+.navigation__link::after {
+    content: '';
+    position: absolute;    
+    left: 0;
+    bottom: -2px;
+
+    width: 100%;
+    height: 1px;
+    background: rgb(77, 228, 203);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+
+}
+
+.navigation__link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
